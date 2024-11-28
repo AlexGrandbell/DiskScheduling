@@ -11,7 +11,7 @@ Realize disk scheduling;
 
 (4) The disk scheduling results can be displayed (the sequence of track numbers accessed by the magnetic head in turn, etc.).
 
-Very simple, here I choose the first come first service method, the shortest seek time first, elevator algorithm these three algorithms.
+Very simple, here I choose the FCFS, SSTF, SCAN these three algorithms.
 
 操作系统实验：
 
