@@ -1,3 +1,18 @@
+OS Experiment:
+
+Experiment 2 Disk scheduling
+
+(1) Select 1~3 disk scheduling algorithms (FCFS,SSTF,SCAN) for simulation
+Realize disk scheduling;
+
+(2) can input the position of the current head, the direction of the head movement, the sequence of track access requests, etc.;
+
+(3) Calculate the total track number of the head movement;
+
+(4) The disk scheduling results can be displayed (the sequence of track numbers accessed by the magnetic head in turn, etc.).
+
+Very simple, here I choose the first come first service method, the shortest seek time first, elevator algorithm these three algorithms.
+
 操作系统实验：
 
 实验二 磁盘调度
