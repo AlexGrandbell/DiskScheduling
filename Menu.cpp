@@ -21,7 +21,7 @@ void Menu::PrintMenu() {
                 break;
         }
         cout << "当前磁道数: " << current << endl;
-        cout << "当前磁头移动方向: " << (direction ? "向外" : "向内") << endl;
+        cout << "当前磁头移动方向: " << (direction ? "向内" : "向外") << endl;
         cout << "当前请求序列: ";
         for (int i = 0; i < requests.size(); ++i) {
             cout << requests[i] << " ";
@@ -90,7 +90,7 @@ void Menu::setCurrent() {
 
 //设置磁头初始移动方向
 void Menu::setDirection() {
-    cout << "请选择磁头初始移动方向(1-向外 0-向内):";
+    cout << "请选择磁头初始移动方向(1-向内 0-向外):";
     cin >> direction;
     if (direction != 0 && direction != 1) {
         cout << "输入错误，请重新输入" << endl;

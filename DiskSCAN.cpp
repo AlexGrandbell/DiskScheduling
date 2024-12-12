@@ -8,7 +8,7 @@
 void DiskSCAN::run() {
     cout << "扫描算法" << endl;
     showBaseInfo();
-    cout << "移动磁道序列: ";
+    cout << "移动磁道序列: "<<current<< " ";
     vector<int> left;
     vector<int> right;
     for (int i = 0; i < requests.size(); ++i) {
@@ -20,7 +20,7 @@ void DiskSCAN::run() {
     }
     sort(left.begin(), left.end());
     sort(right.begin(), right.end());
-    if (direction) {//向外
+    if (direction) {
         for (int i = 0; i < right.size(); ++i) {
             cout << right[i] << " ";
             totalMoveNum += abs(right[i] - current);

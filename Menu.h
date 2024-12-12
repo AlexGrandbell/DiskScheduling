@@ -12,8 +12,8 @@
 //菜单类
 class Menu {
 public:
-    Menu():current(0),direction(true),mode(1) {
-        requests = {1,2,3};
+    Menu():current(53),direction(false),mode(1) {
+        requests = {98,183,37,122,14,124,65,67};
     }
 
     void PrintMenu();

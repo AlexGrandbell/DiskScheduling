@@ -11,6 +11,6 @@ void Disk::showBaseInfo() {
         cout << requests[i] << " ";
     }
     cout << endl;
-    cout << "磁头移动方向: " << (direction ? "向外" : "向内") << endl;
+    cout << "磁头移动方向: " << (direction ? "向内" : "向外") << endl;
     cout << "当前磁道: " << current << endl;
 }

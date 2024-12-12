@@ -8,7 +8,7 @@
 void DiskFCFS::run() {
     cout << "先来先服务算法" << endl;
     showBaseInfo();
-    cout << "移动磁道序列: ";
+    cout << "移动磁道序列: "<<current<< " ";
     for (int i = 0; i < requests.size(); ++i) {
         cout << requests[i] << " ";
         totalMoveNum += abs(requests[i] - current);

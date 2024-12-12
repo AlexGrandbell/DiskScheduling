@@ -14,12 +14,12 @@ using namespace std;
 class Disk {
 public:
     vector<int> requests;//请求序列
-    bool direction;//磁头移动方向,true为向外,false为向内
+    bool direction;//磁头移动方向,true为向内,false为向外（小）
     int current;//当前磁道
     int totalMoveNum;//总移动磁道数
 
-    Disk():direction(true),current(0),totalMoveNum(0) {
-        requests = {1,2,3};
+    Disk():direction(false),current(53),totalMoveNum(0) {
+        requests = {98,183,37,122,14,124,65,67};
     }
     Disk(vector<int> requests, bool direction, int current):requests(requests),direction(direction),current(current),totalMoveNum(0) {}
 
