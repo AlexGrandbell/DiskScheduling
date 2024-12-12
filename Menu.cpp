@@ -14,7 +14,7 @@ void Menu::PrintMenu() {
                 cout << "FCFS先来先服务算法" << endl;
                 break;
             case 2:
-                cout << "SSFT最短寻道时间优先算法" << endl;
+                cout << "SSTF最短寻道时间优先算法" << endl;
                 break;
             default:
                 cout << "SCAN扫描算法" << endl;
@@ -100,7 +100,7 @@ void Menu::setDirection() {
 
 //选择算法
 void Menu::setMode() {
-    cout << "请选择算法(1-FCFS先来先服务算法 2-SSFT最短寻道时间优先算法 3-SCAN扫描算法):";
+    cout << "请选择算法(1-FCFS先来先服务算法 2-SSTF最短寻道时间优先算法 3-SCAN扫描算法):";
     cin >> mode;
     if (mode != 1 && mode != 2 && mode != 3) {
         cout << "输入错误，请重新输入" << endl;
@@ -117,8 +117,8 @@ void Menu::run() {
             break;
         }
         case 2: {
-            DiskSSFT diskSSFT(requests, direction, current);
-            diskSSFT.run();
+            DiskSSTF diskSSTF(requests, direction, current);
+            diskSSTF.run();
             break;
         }
         default: {

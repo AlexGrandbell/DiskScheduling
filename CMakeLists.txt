@@ -8,8 +8,8 @@ add_executable(DiskScheduling main.cpp
         Disk.h
         DiskFCFS.cpp
         DiskFCFS.h
-        DiskSSFT.cpp
-        DiskSSFT.h
+        DiskSSTF.cpp
+        DiskSSTF.h
         DiskSCAN.cpp
         DiskSCAN.h
         Menu.cpp

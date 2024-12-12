@@ -2,10 +2,10 @@
 // Created by AlexGrandbell on 24-11-27.
 //
 
-#include "DiskSSFT.h"
+#include "DiskSSTF.h"
 
 //最短寻道时间优先算法
-void DiskSSFT::run() {
+void DiskSSTF::run() {
     cout << "最短寻道时间优先算法" << endl;
     showBaseInfo();
     cout << "移动磁道序列: "<<current<< " ";

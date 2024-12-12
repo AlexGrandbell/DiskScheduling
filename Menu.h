@@ -7,7 +7,7 @@
 
 #include "DiskFCFS.h"
 #include "DiskSCAN.h"
-#include "DiskSSFT.h"
+#include "DiskSSTF.h"
 
 //菜单类
 class Menu {
@@ -22,7 +22,7 @@ private:
     vector<int> requests;
     int current;
     bool direction;
-    int mode;//1-FCFS 2-SSFT 3-SCAN
+    int mode;//1-FCFS 2-SSTF 3-SCAN
 
     void setRequests();
     void setCurrent();
